@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			{{ page.title }}
+		</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="{{ page.description }}">
+		<meta name="viewport" content="initial-scale=1">
+
+		<style>
+			div#header li#{{ page.title }} a {
+				color: #3873b3;
+				font-weight: bold;
+			}
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- Page-specific stylesheets.  -->
+		{% if page.stylesheet %}
+			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
+		{% endif %}
+		{% if page.title != "home" %}
+			<link rel="stylesheet" type="text/css" href="/css/header.css">
+		{% endif %}
+		{% if page.code %}
+			<link rel="stylesheet" type="text/css" href="/css/code_color_scheme.css">
+			<link rel="stylesheet" type="text/css" href="/css/code.css">
+		{% endif %}
+
+		{{ page.head }}
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p>
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+
+		<div id="main">
+			{% if page.title != "home" %}
+				{% include header.html %}
+			{% endif %}
+			{{ content }}
+		</div>
+
+	</body>
+</html>

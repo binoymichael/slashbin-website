@@ -26,14 +26,86 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+$baseColor2: #00aa00;
+$baseColor1: #000000;
+$paleGreen: #F0FCF0;
 
-// Import partials from the `minima` theme.
-@import "minima";
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+div#main {
+	font-family: "Lato", sans-serif, helvetica;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+  margin-top: 2%;
+	max-width: $content-width;
+	padding: 0 18px;
+}
+
+a {
+	color: $baseColor2;
+	text-decoration: none;
+  cursor: pointer;
+
+	&:hover {
+		color: $baseColor1;
+  }
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $baseColor1;
+	line-height: 1.1em;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.nav {
+  float: left;
+  margin-top: 1%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.container {
+  overflow: hidden; width: auto;
+}
+
+.project-cards {
+  display: table;
+  width: 54%;
+  border-spacing: 10px;
+}
+
+.card {
+    display: table-cell;
+    width: 45%;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: $paleGreen;
+    color: $baseColor1;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 16px 16px;
+}
