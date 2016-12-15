@@ -79,7 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin-top: 1%;
   margin-right: 10%;
-  height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    float: none;
+  }
 }
 
 .container {
