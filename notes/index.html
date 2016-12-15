@@ -1,0 +1,13 @@
+---
+title: notes
+description: Binoy Michael Prakash's notes on software, programming, tech stuff
+stylesheet: true
+---
+<h1>Notes</h1>
+<br/>
+<ul id="posts">
+	{% for post in site.posts %}
+		{% include post_summary.html %}
+	{% endfor %}
+</ul>
+
