@@ -10,13 +10,6 @@
 		<meta name="description" content="{{ page.description }}">
 		<meta name="viewport" content="initial-scale=1">
 
-		<style>
-			div#header li#{{ page.title }} a {
-				color: #3873b3;
-				font-weight: bold;
-			}
-		</style>
-
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
     <script src="https://use.fontawesome.com/1a8dc0ec9f.js"></script>
 
@@ -24,15 +17,10 @@
 		{% if page.stylesheet %}
 			<link rel="stylesheet" type="text/css" href="/css/{{ page.title }}.css">
 		{% endif %}
-		{% if page.title != "home" %}
-			<link rel="stylesheet" type="text/css" href="/css/header.css">
-		{% endif %}
 		{% if page.code %}
 			<link rel="stylesheet" type="text/css" href="/css/code_color_scheme.css">
 			<link rel="stylesheet" type="text/css" href="/css/code.css">
 		{% endif %}
-
-		{{ page.head }}
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -43,10 +31,22 @@
 		<![endif]-->
 
 		<div id="main">
-			{% if page.title != "home" %}
-				{% include header.html %}
-			{% endif %}
-			{{ content }}
+      <div class="nav">
+          <h3>$ ls -1 /bin</h3>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="work">work</a></li>
+            <li><a href="/binoy_resume.pdf" target="_blank">resume</a></li>
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/til">til</a></li>
+            <li><a href="mailto:prakash.binoy@gmail.com">contact</a></li>
+            <br/>
+            <li><a href="https://github.com/binoymichael/"><i class="fa fa-github"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/prakash-binoy"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+      <div class="container">
+        {{ content }}
+      </div>
 		</div>
 
 	</body>
