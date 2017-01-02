@@ -17,9 +17,9 @@ _Senior Software Architect (Jul 2011 – Jul 2016)_
 
 - Involved in the development of backend API/applications for [Mobile-Express](http://www.slideshare.net/vishnu/mobile-express) - a **PKI infrastructure** based ecosystem. Mobile Express embeds users&#39; **digital signatures** into their mobile crypto SIM cards, SD cards and can be used for authentication and document signing. Mobile Express failed to take flight because of certain logistical issues and the payment component was pivoted to create JetSetPay. The authentication module was extracted out and as in being offered as a product by the [Digital Banking Labs](http://mobme.in/dbl/) team.
 
-- Developed the prototype **Android** application and backend for Chillr ( [https://chillr.com](https://chillr.com/)), a **P2P money transfer** app. Chillr was intially convnceived under the Mobile-Express ecosystem, but was later spun off to form a separate company.
+- Developed the prototype **Android** application and backend for Chillr ( [https://chillr.com](https://chillr.com/)), a **P2P money transfer** app. Chillr was initially conceived under the Mobile-Express ecosystem, but was later spun off to form a separate company.
 
-- Involved in the development of a **Ruby** framework for creating USSD applications and led a team of 5 engineers to rebuild entire suite of **USSD** The framework was later open-sourced ( [colloquy](https://github.com/mobmewireless/colloquy)) and some of my contributions can be viewed [here](https://github.com/mobmewireless/colloquy/blob/master/TODO.md#changes).
+- Involved in the development of a **Ruby** framework for creating USSD applications and led a team of 5 engineers to rebuild entire suite of **USSD** The framework was later open-sourced ([colloquy](https://github.com/mobmewireless/colloquy)) and some of my contributions can be viewed [here](https://github.com/mobmewireless/colloquy/blob/master/TODO.md#changes).
 
 {:id="cognizant"}
 **Cognizant Technology Solutions**  
