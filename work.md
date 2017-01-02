@@ -25,7 +25,7 @@ _Senior Software Architect (Jul 2011 – Jul 2016)_
 **Cognizant Technology Solutions**  
 _Systems Analyst/Programmer for Anthem Inc. projects (Nov 2006 – Dec 2010)_
 
-- Created functional specifications/designs for **Trizetto**** Facets** Coordinated with clients, developer teams, vendors and led implementation of these projects.
+- Created functional specifications/designs for **Trizetto Facets** applications. Coordinated with clients, developer teams, vendors and led implementation of these projects.
 
 - Designed and developed numerous **Trizetto Facets** based applications using **Java, Sybase(ASE), Shell scripts and SQL**.
 
